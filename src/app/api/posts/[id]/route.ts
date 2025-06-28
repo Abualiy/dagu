@@ -42,7 +42,7 @@ export async function PUT(req: NextRequest,{params}:{ params: { id: string } }) 
 }
 
 // ✅ DELETE handler
-export async function DELETE(req: NextRequest, {params}: { params: { id: string } }) {
+export async function DELETE( {params}: { params: { id: string } }) {
   const { id } = params
 
   const headers = new Headers()
