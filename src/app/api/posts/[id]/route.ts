@@ -1,8 +1,9 @@
-// app/api/habbos/[id]/route.ts
 import { NextRequest, NextResponse } from 'next/server'
 
-export async function PUT(req: NextRequest, context: { params: { id: string } }) {
-  const { id } = context.params
+// ✅ PUT: Update a habbo post
+export async function PUT(req: NextRequest) {
+  const url = new URL(req.url)
+  const id = url.pathname.split('/').pop() // ✅ Extract ID from the URL
   const body = await req.json()
 
   const headers = new Headers()
@@ -39,8 +40,10 @@ export async function PUT(req: NextRequest, context: { params: { id: string } })
   return NextResponse.json(result.story)
 }
 
-export async function DELETE(req: NextRequest, context: { params: { id: string } }) {
-  const { id } = context.params
+// ✅ DELETE: Delete a habbo post
+export async function DELETE(req: NextRequest) {
+  const url = new URL(req.url)
+  const id = url.pathname.split('/').pop()
 
   const headers = new Headers()
   headers.append('Authorization', process.env.STORYBLOK_MANAGEMENT_TOKEN!)
