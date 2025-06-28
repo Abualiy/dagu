@@ -1,6 +1,8 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
+
+
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
@@ -119,4 +121,24 @@
   body {
     @apply bg-background text-foreground;
   }
+}
+
+
+/* my style */
+html {
+    scroll-behavior: smooth;
+}
+
+
+.dagu-bg {
+  background: url('/images/dagu-bg.png');
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.hero-bg {
+  background: url('/images/hero-bg.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
