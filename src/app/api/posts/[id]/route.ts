@@ -3,8 +3,8 @@
 import { NextRequest, NextResponse } from 'next/server'
 
 // ✅ PUT handler
-export async function PUT(req: NextRequest,{params}:{ params: { id: string } }) {
-  const { id } = params
+export async function PUT(req: NextRequest,context:{ params: { id: string } }): Promise<NextResponse> {
+  const { id } = context.params
   const body = await req.json()
 
   const headers = new Headers()
@@ -42,8 +42,8 @@ export async function PUT(req: NextRequest,{params}:{ params: { id: string } }) 
 }
 
 // ✅ DELETE handler
-export async function DELETE(req: NextRequest, {params}: { params: { id: string } }) {
-  const { id } = params
+export async function DELETE(req: NextRequest, context: { params: { id: string } }): Promise<NextResponse> {
+  const { id } = context.params
 
   const headers = new Headers()
   headers.append('Authorization', process.env.STORYBLOK_MANAGEMENT_TOKEN!)
