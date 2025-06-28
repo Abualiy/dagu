@@ -6,8 +6,11 @@ import { fetchAllPosts } from '@/lib/api'
 import React from 'react'
 
 
+export const dynamic = 'force-dynamic'
+export const revalidate = 0
+
 const Habbo = async () => {
-  const habbos = await fetchAllPosts("");
+  const habbos = await fetchAllPosts();
 
   return (
     <div>

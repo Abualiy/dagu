@@ -11,7 +11,7 @@ interface SearchProps {
 
 const Search = async ({ searchParams }: SearchProps) => {
     const keyword = searchParams.search || '';
-    const posts = await searchPosts("keyword")
+    const posts = await searchPosts(keyword)
 
     return (
         <div>

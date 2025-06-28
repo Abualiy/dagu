@@ -11,10 +11,15 @@ export const axiosInstance = () => {
     })
 }
 
-export const fetchAllPosts = async (keyword) => {
+export const fetchAllPosts = async (per_page = 10, page = 1) => {
     try {
-        const {data} = await axiosInstance().get('/?' + `filter_query[title][like]=*${keyword}*`)
-        return data.stories;
+        const { data } = await axiosInstance().get("/", {
+            params: {
+                page,
+                per_page
+            }
+        });
+        return data?.stories;
     } catch (error) {
         console.log(error)
         return null
