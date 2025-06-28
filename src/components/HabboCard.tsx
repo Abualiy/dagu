@@ -1,6 +1,8 @@
 import Link from 'next/link'
 import React from 'react'
 
+export const dynamic = 'force-dynamic'
+
 const HabboCard = ({ posts }) => {
 
     console.log(posts)
