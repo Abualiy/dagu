@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react'
 import { supabase } from './supabase'
 
 export const useUser = () => {
-  const [user, setUser] = useState<any>(null)
+  const [user, setUser] = useState(null)
   const [loading, setLoading] = useState(true)
 
   useEffect(() => {

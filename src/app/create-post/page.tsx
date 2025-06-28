@@ -55,7 +55,7 @@ const CreatePost = () => {
     }
   }
 
-  const submit = async (e: any) => {
+  const submit = async (e) => {
     e.preventDefault()
     setCreateLoading(true)
 

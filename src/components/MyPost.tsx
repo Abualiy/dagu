@@ -1,12 +1,11 @@
 'use client'
-import { deleteHabbo } from '@/lib/api'
 import Link from 'next/link'
 import React from 'react'
 import { toast } from 'sonner'
 
 const MyPost = ({ posts }) => {
     if (!posts || posts.length === 0) {
-        return <p className="text-gray-500">You haven't posted any Habbos yet.</p>
+        return <p className="text-gray-500">You haven&apos;t posted any Habbos yet.</p>
     }
 
     const handleDelete = async (id: number) => {
@@ -33,7 +32,7 @@ const MyPost = ({ posts }) => {
     return (
         <div className='min-h-[45vh]'>
             <div className="space-y-4">
-                {posts.map((post: any) => (
+                {posts.map((post) => (
                     <div key={post.id} className="border p-4 rounded-md shadow-sm bg-white">
                         <h3 className="text-xl font-bold text-orange-800">{post.content.title}</h3>
                         <span className='text-sm '>📅 {post.published_at?.split("T")[0] ?? post.created_at.split("T")[0]}</span>

@@ -12,7 +12,7 @@ const About = () => {
           <p className="text-gray-700 leading-relaxed">
             <strong>Dagu</strong> is the traditional Afar system of sharing truthful, timely, and essential information. 
             Passed orally through communities, it serves as a lifeline in the desert—helping people navigate survival, weather, health, conflict, and social changes. 
-            In Afar culture, Dagu is more than news — it's a moral responsibility to speak only what is true and useful.
+            In Afar culture, Dagu is more than news — it&apos;s a moral responsibility to speak only what is true and useful.
           </p>
         </div>
 
@@ -22,7 +22,7 @@ const About = () => {
           <p className="text-gray-700 leading-relaxed">
             This platform brings the spirit of <strong>Dagu</strong> into the digital world. 
             Here, users can share and discover “Habbos” — posts inspired by traditional Afar messages — in a respectful, community-driven space. 
-            It’s a modern tool to preserve indigenous knowledge, promote truth, and empower Afar voices across borders. 
+            It&apos;s a modern tool to preserve indigenous knowledge, promote truth, and empower Afar voices across borders. 
             With features like user authentication, post creation, search, likes, and comments, the Dagu system is reborn for the web.
           </p>
         </div>

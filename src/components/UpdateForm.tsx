@@ -13,7 +13,7 @@ const UpdateForm = ({ post }) => {
 
     // Fetch existing data
 
-    const handleSubmit = async (e: any) => {
+    const handleSubmit = async (e) => {
         e.preventDefault()
         setLoading(true)
         const res = await fetch(`/api/posts/${post.id}`, {
