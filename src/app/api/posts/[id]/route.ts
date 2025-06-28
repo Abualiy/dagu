@@ -1,10 +1,10 @@
 // src/app/api/posts/[id]/route.ts
-
 import { NextRequest, NextResponse } from 'next/server'
 
-// ✅ PUT handler
-export async function PUT(req: NextRequest, context: { params: { id: string } }) {
-  const { id } = context.params
+export async function PUT(req: NextRequest) {
+  const url = new URL(req.url)
+  const id = url.pathname.split('/').pop() // Extract ID from URL path
+
   const body = await req.json()
 
   const headers = new Headers()
@@ -41,9 +41,9 @@ export async function PUT(req: NextRequest, context: { params: { id: string } })
   return NextResponse.json(result.story)
 }
 
-// ✅ DELETE handler
-export async function DELETE(req: NextRequest, context: { params: { id: string } }) {
-  const { id } = context.params
+export async function DELETE(req: NextRequest) {
+  const url = new URL(req.url)
+  const id = url.pathname.split('/').pop() // Extract ID from URL path
 
   const headers = new Headers()
   headers.append('Authorization', process.env.STORYBLOK_MANAGEMENT_TOKEN!)
