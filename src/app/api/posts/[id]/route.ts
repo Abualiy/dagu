@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server'
 
 // ✅ PUT: Update a habbo post
-export async function PUT(req: NextRequest) {
+export async function PUT(req: NextRequest):Promise<any> {
   const url = new URL(req.url)
   const id = url.pathname.split('/').pop() // ✅ Extract ID from the URL
   const body = await req.json()
@@ -41,7 +41,7 @@ export async function PUT(req: NextRequest) {
 }
 
 // ✅ DELETE: Delete a habbo post
-export async function DELETE(req: NextRequest) {
+export async function DELETE(req: NextRequest):Promise<any> {
   const url = new URL(req.url)
   const id = url.pathname.split('/').pop()
 
