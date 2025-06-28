@@ -1,8 +1,6 @@
 // app/api/posts/[id]/route.ts
 import { NextRequest, NextResponse } from 'next/server'
-import type { NextApiRequest } from 'next'
 
-// This is the correct type for context in Next.js App Router
 type RouteContext = {
   params: {
     id: string
