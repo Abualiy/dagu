@@ -1,36 +1,66 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Dagu 🌍
 
-## Getting Started
+**A Modern Web Platform Inspired by the Afar People's Traditional Information System**
 
-First, run the development server:
+> _This is a submission for the [Storyblok Challenge](https://dev.to/challenges/storyblok)_
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 📖 Overview
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+**Dagu** is a modern web platform that brings the ancient Afar communication tradition into the digital age. The Afar people of Ethiopia have long relied on **Dagu**, a system of real-time, trusted verbal news sharing. This project revives that spirit by creating a digital space where users can create, share, and engage with valuable community knowledge — called **Habbos**.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+The project was built for the Storyblok Challenge to demonstrate how traditional storytelling can thrive on modern headless CMS architecture with a touch of AI.
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## 🚀 Live Demo
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- 🔗 **Website:** [https://dagu.vercel.app](https://dagu.vercel.app)  
+- 🔗 **Storyblok Space:** [https://sylfxxcladepgakbnsin.supabase.co](https://sylfxxcladepgakbnsin.supabase.co)
+- 🔗 **GitHub Repo:** [https://github.com/Abualiy/dagu](https://github.com/Abualiy/dagu)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## 🛠️ Tech Stack
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- **Frontend:** Next.js 14 App Router (TypeScript)
+- **CMS:** Storyblok (Visual Editor, Components, Management API)
+- **Authentication:** Supabase Auth
+- **Styling:** Tailwind CSS
+- **Icons & UI:** Lucide, shadcn/ui
+- **Hosting:** Vercel
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+## 🤖 AI Integration
+
+Used OpenRouter AI API to enhance the blog creation experience:
+
+- ✨ **Excerpt Generation:** AI automatically creates 2–3 sentence summaries from the post content.
+- ✍️ **Text Improvement:** Users can enhance or refine their blog content before publishing.
+
+---
+
+## 📸 Screenshots
+
+<!-- Add screenshots here if you want -->
+![Homepage](public/dagu-screen.png)
+<!-- ![Create Habbo](public/screenshot-create.png) -->
+<!-- ![Single Post](public/screenshot-post.png) -->
+
+---
+
+## 🧠 What I Learned
+
+- Leveraged Storyblok's visual editor and component-based architecture to create reusable content blocks.
+- Integrated Supabase for secure authentication and session handling.
+- Connected OpenRouter AI API for real-time excerpt generation and text improvement.
+- Improved my understanding of dynamic content fetching and real-time updates with Storyblok.
+
+---
+
+## 🧑‍🤝‍🧑 Team
+
+Built with ❤️ by [@Abualiy](https://akremmuktar.vercel.app)
+
