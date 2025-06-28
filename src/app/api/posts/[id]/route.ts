@@ -1,8 +1,16 @@
-// app/api/habbos/[id]/route.ts
+// app/api/posts/[id]/route.ts
 import { NextRequest, NextResponse } from 'next/server'
+import type { NextApiRequest } from 'next'
 
-export async function PUT(req: NextRequest, context: { params: { id: string } }) {
-  const { id } = context.params
+// This is the correct type for context in Next.js App Router
+type RouteContext = {
+  params: {
+    id: string
+  }
+}
+
+export async function PUT(req: NextRequest, { params }: RouteContext) {
+  const { id } = params
   const body = await req.json()
 
   const headers = new Headers()
@@ -39,7 +47,7 @@ export async function PUT(req: NextRequest, context: { params: { id: string } })
   return NextResponse.json(result.story)
 }
 
-export async function DELETE(req: NextRequest, { params }: { params: { id: string } }) {
+export async function DELETE(req: NextRequest, { params }: RouteContext) {
   const { id } = params
 
   const headers = new Headers()
