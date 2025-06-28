@@ -7,7 +7,7 @@ import React from 'react'
 
 
 const Habbo = async () => {
-  const habbos = await fetchAllPosts();
+  const habbos = await fetchAllPosts("");
 
   return (
     <div>
