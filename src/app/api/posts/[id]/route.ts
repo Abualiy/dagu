@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server'
 
-export async function PUT(req: NextRequest, context: { params: Record<string, string> }) {
+export async function PUT(req: NextRequest, context: { params: { id: string } }): Promise<NextResponse> {
   const { id } = context.params
   const body = await req.json()
 
@@ -38,7 +38,7 @@ export async function PUT(req: NextRequest, context: { params: Record<string, st
   return NextResponse.json(result.story)
 }
 
-export async function DELETE(req: NextRequest, context: { params: Record<string, string> }) {
+export async function DELETE(req: NextRequest, context: { params: { id: string } }): Promise<NextResponse> {
   const { id } = context.params
 
   const headers = new Headers()
