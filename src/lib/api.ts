@@ -46,7 +46,7 @@ export const myPosts = async(keyword) => {
     }
 }
 
-export const deleteHabbo = async (storyId: number) => {  
+export const deleteHabbo = async (storyId: number) => {
    const SPACE_ID = '285378710485282'
 
     const headers = new Headers();

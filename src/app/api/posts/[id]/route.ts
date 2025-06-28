@@ -1,8 +1,8 @@
 // app/api/habbos/[id]/route.ts
 import { NextRequest, NextResponse } from 'next/server'
 
-export async function PUT(req: NextRequest, { params }: { params: { id: string } }) {
-  const { id } = params
+export async function PUT(req: NextRequest, context: { params: { id: string } }) {
+  const { id } = context.params
   const body = await req.json()
 
   const headers = new Headers()
