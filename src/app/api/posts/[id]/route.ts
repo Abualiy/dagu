@@ -1,7 +1,6 @@
-// app/api/habbos/[id]/route.ts
 import { NextRequest, NextResponse } from 'next/server'
 
-export async function PUT(req: NextRequest, context: { params: { id: string } }) {
+export async function PUT(req: NextRequest, context: { params: Record<string, string> }) {
   const { id } = context.params
   const body = await req.json()
 
@@ -39,7 +38,7 @@ export async function PUT(req: NextRequest, context: { params: { id: string } })
   return NextResponse.json(result.story)
 }
 
-export async function DELETE(req: NextRequest, context: { params: { id: string } }) {
+export async function DELETE(req: NextRequest, context: { params: Record<string, string> }) {
   const { id } = context.params
 
   const headers = new Headers()
