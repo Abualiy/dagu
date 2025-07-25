@@ -44,10 +44,8 @@ Used OpenRouter AI API to enhance the blog creation experience:
 
 ## 📸 Screenshots
 
-<!-- Add screenshots here if you want -->
+
 ![Homepage](public/dagu-screen.png)
-<!-- ![Create Habbo](public/screenshot-create.png) -->
-<!-- ![Single Post](public/screenshot-post.png) -->
 
 ---
 
